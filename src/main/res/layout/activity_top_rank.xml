@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/common_bg"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/common_toolbar" />
+
+    <com.example.android_bookreader2.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layerType="software">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="男生"
+                android:textColor="@color/common_h1"
+                android:textSize="18dp" />
+
+            <com.example.android_bookreader2.view.CustomExpandableListView
+                android:id="@+id/elvMale"
+                android:childDivider="@drawable/shape_common_dash_divide"
+                android:groupIndicator="@null"
+                android:listSelector="@drawable/shape_common_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="女生"
+                android:textColor="@color/common_h1"
+                android:textSize="18dp" />
+
+            <com.example.android_bookreader2.view.CustomExpandableListView
+                android:id="@+id/elvFeMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:childDivider="@drawable/shape_common_dash_divide"
+                android:groupIndicator="@null"
+                android:listSelector="@drawable/shape_common_selector" />
+
+        </LinearLayout>
+
+    </com.example.android_bookreader2.view.ReboundScrollView>
+
+</LinearLayout>
