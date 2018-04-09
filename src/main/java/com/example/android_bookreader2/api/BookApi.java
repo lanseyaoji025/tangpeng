@@ -34,7 +34,7 @@ import retrofit2.http.Query;
 import rx.Observable;
 
 /**
- * Created by tangpeng on 2017/11/10.
+ * Created by tangshuai on 2017/11/10.
  */
 
 public class BookApi {
